@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>铭台科技</title>
+    <link rel="stylesheet" href="lib/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-3.3.1.min.css"/>
+</head>
+<body>
+
+<!--loading加载开始-->
+<div id="box">
+    <div class="logo"></div>
+    <div class="load"></div>
+</div>
+
+<!--顶部导航开始-->
+<div class="indextop flex-container">
+
+    <div class="w">
+        <div class="navleft">
+            <img class="logo1" src="img/first_nav_logo.png">
+        </div>
+        <div class="navcenter">
+            <!--<span id="cloud"></span>-->
+            <ul id="navBar">
+                <li data-menuanchor="mao_page" class="menuList"><a href="#mao_page">首页</a></li>
+                <li data-menuanchor="mao_business" class="menuList"><a href="#mao_business">业务</a></li>
+                <li data-menuanchor="mao_show" class="menuList"><a href="#mao_show">展示</a></li>
+                <li data-menuanchor="mao_news" class="menuList"><a href="#mao_news">新闻</a></li>
+                <li data-menuanchor="mao_about" class="menuList"><a href="#mao_about">关于</a></li>
+                <li data-menuanchor="mao_contant" class="menuList"><a href="#mao_contant">联系</a></li>
+            </ul>
+        </div>
+        <div class="navright">
+            <img src="./img/first_icon_tel2.png">
+            <a>010-6292-2851</a>
+        </div>
+    </div>
+</div>
+<!--右侧分享开始-->
+<div class="sharenav">
+    <div class="share">
+        <a href="#"><img src="img/first_icon_upArrow.png" alt=""></a>
+        <a href="#"><img src="img/first_icon_qq.png" alt=""></a>
+        <a href="#"><img src="./img/first_icon_tel1.png" alt=""></a>
+        <a href="#"><img src="./img/first_icon_weChat.png" alt=""></a>
+        <a href="#"><img src="img/first_icon_downArrow.png" alt=""></a>
+    </div>
+</div>
+
+<div id="fullpage">
+
+
+    <!--第一屏-->
+    <div class="section video">
+        <!--轮播图-->
+        <div class="all" id='lb-box'>
+            <div class="screen">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <!--添加图片要改css样式ul的宽度-->
+                </ul>
+                <ol>
+                </ol>
+            </div>
+            <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+        </div>
+    </div>
+
+    <!--第二屏-->
+    <div class="section second">
+        <div class="w">
+            <div class="second_da">
+                <div class="operation">
+                    <ul>
+                        <li class="second_tab_item">
+                            <div class="second_zhuan"></div>
+                            <div class="second_nei"></div>
+                            <div class="second_cont"></div>
+                            <div class="second_text">
+                                <span>找啊APP<br/>手机客户端</span>
+                            </div>
+                        </li>
+                        <li class="second_tab_item">
+                            <div class="second_zhuan"></div>
+                            <div class="second_nei"></div>
+                            <div class="second_cont"></div>
+                            <div class="second_text">
+                                <span>APP内容发布<br/>舆情信息云服务</span>
+                            </div>
+                        </li>
+                        <li class="second_tab_item">
+                            <div class="second_zhuan"></div>
+                            <div class="second_nei"></div>
+                            <div class="second_cont"></div>
+                            <div class="second_text">
+                                <span>移动互联网<br/>软件开发</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--todo-->
+                <div class="second_tab">
+                    <div class="second_tab_box selected">
+                        <p>
+                            &gt;&nbsp;基于移动互联网的政务供采信息服务平台<br/>
+                            &gt;&nbsp;厂商产品及解决方案的展示窗口和跟踪需求的耳目<br/>
+                            &gt;&nbsp;采购业主了解新产品博览会及货比三家的“超市”
+                        </p>
+                    </div>
+                    <div class="second_tab_box">
+                        <p>
+                            &gt;&nbsp;一体化、全方位、多终端、云服务的新型内容发布云平台<br/>
+                            &gt;&nbsp;基于SAAS模型和强大的分布式大数据采集、存储、检索、分析技术<br/>
+                            &gt;&nbsp;打造舆情预警、分析、研判的综合性云服务体系
+                        </p>
+                    </div>
+                    <div class="second_tab_box">
+                        <p>
+                            &gt;&nbsp;专注于移动互联网领域产品开发<br/>
+                            &gt;&nbsp;强大的移动应用开发、运营、销售体系<br/>
+                            &gt;&nbsp;为大众消费市场和行业应用市场提供移动解决方案
+                        </p>
+                    </div>
+                </div>
+                <!--todo-->
+            </div>
+        </div>
+    </div>
+
+    <!--第三屏-->
+    <div class="section third">
+        <div class="w">
+            <div class="third_wrap" id="third_wrap">
+                <div class="third_slide" id="third_slide">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/third_play4.jpg" alt=""/>
+                                <div class="third_message">
+                                    <p>智能定位路线</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/third_play5.jpg" alt=""/>
+                                <div class="third_message">
+                                    <p>消息提醒</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/third_play1.jpg" alt=""/>
+                                <div class="third_message">
+                                    <p>走自己的平凡路</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/third_play2.jpg" alt=""/>
+                                <div class="third_message">
+                                    <p>登录、注册页</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/third_play3.jpg" alt=""/>
+                                <div class="third_message">
+                                    <p>同步信息功能页</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="third_arrow" id="third_arrow">
+                        <a href="javascript:;" class="third_prev" id="third_arrLeft"></a>
+                        <a href="javascript:;" class="third_next" id="third_arrRight"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--第四屏-->
+    <div class="section fourth">
+        <div class="w">
+            <div class="fourth_light" id="fourth_light">
+                <div class="fourth_news">
+                    <ul>
+                        <li>
+                            <div class="fourth_news_page">
+                                <div class="fourth_news_page1">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MjM5MDkyNTkzMA==&mid=2653301746&idx=1&sn=0d8f4ad07352c32c711a414d20eac5b3&mpshare=1&scene=1&srcid=10137Z41Pfnt7Ez7f5n0grG1&from=singlemessage&isappinstalled=0#wechat_redirect">习近平：加快推进网络信息技术自主创新</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        中共中央政治局10月9日下午就实施网络强国战略进行第三十六次集体学习。中共中央总书记习近平在主持学习时强调，加快推进网络信息技术自主创新，加快数字经济对经济发展的推动，加快提高网络管理水平，加快增强网络空间安全防御能力．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MjM5MDkyNTkzMA==&mid=2653301746&idx=1&sn=0d8f4ad07352c32c711a414d20eac5b3&mpshare=1&scene=1&srcid=10137Z41Pfnt7Ez7f5n0grG1&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page2">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA3Mzk2ODY3Mg==&mid=2651369865&idx=1&sn=baf29ed9978991647b2225afe62f15a7&scene=4#wechat_redirect">“十三五”时期科技强检规划纲要(全文)</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        为更好地推动检察工作创新发展，高检院于2016年9月29日正式印发《“十三五”时期科技强检规划纲要》。这是高检院在深化司法体制改革的关键时期，高检院党组做出的重要战略部署，是检察机关顺应新技术变革，以科学技术推动检察工作创新发展的重要举措．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA5MjM1MjIwNQ==&mid=2650086090&idx=3&sn=23f7900c012438ad4b2d2f23a902541a&chksm=886fc168bf18487e3183bfadabd4e3890c50b2061849bdc31d3f7a4568403776bf4896d38b9b&mpshare=1&scene=1&srcid=1013tA2wTNgTQC0860trOvNn&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page3">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA5MjM1MjIwNQ==&mid=2650086090&idx=3&sn=23f7900c012438ad4b2d2f23a902541a&chksm=886fc168bf18487e3183bfadabd4e3890c50b2061849bdc31d3f7a4568403776bf4896d38b9b&mpshare=1&scene=1&srcid=1013tA2wTNgTQC0860trOvNn&from=singlemessage&isappinstalled=0#wechat_redirect">中国安防行业“十三五”发展规划</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        “十三五”是深入贯彻党的十八大、十八届三中、四中和五中全会精神，全面深化改革，加快经济发展方式转变的重要时期，也是我国安防行业发展的关键时期。做好安防行业“十三五”发展规划编制工作，提出切实可行、科学的发展方向与目标，是协会的重要工作任务．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA3Mzk2ODY3Mg==&mid=2651369865&idx=1&sn=baf29ed9978991647b2225afe62f15a7&scene=4#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page4">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzIxMjQ4NDA1NQ==&mid=2247483673&idx=1&sn=1f3cb8449db1e5029dc75f640cfdf5ae&mpshare=1&scene=1&srcid=07277S4BdEzlbtlF3SbIYkdy&from=singlemessage&isappinstalled=0#wechat_redirect">《国家信息化发展战略纲要》</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        当今世界，信息技术创新日新月异，以数字化、网络化、智能化为特征的信息化浪潮蓬勃兴起。没有信息化就没有现代化。适应和引领经济发展新常态，增强发展新动力，需要将信息化贯穿我国现代化进程始终，加快释放信息化发展的巨大潜能。以信息化驱动现代化．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzIxMjQ4NDA1NQ==&mid=2247483673&idx=1&sn=1f3cb8449db1e5029dc75f640cfdf5ae&mpshare=1&scene=1&srcid=07277S4BdEzlbtlF3SbIYkdy&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fourth_news_page">
+                                <div class="fourth_news_page1">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MjM5MDkyNTkzMA==&mid=2653301746&idx=1&sn=0d8f4ad07352c32c711a414d20eac5b3&mpshare=1&scene=1&srcid=10137Z41Pfnt7Ez7f5n0grG1&from=singlemessage&isappinstalled=0#wechat_redirect">习近平：加快推进网络信息技术自主创新</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        中共中央政治局10月9日下午就实施网络强国战略进行第三十六次集体学习。中共中央总书记习近平在主持学习时强调，加快推进网络信息技术自主创新，加快数字经济对经济发展的推动，加快提高网络管理水平，加快增强网络空间安全防御能力．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MjM5MDkyNTkzMA==&mid=2653301746&idx=1&sn=0d8f4ad07352c32c711a414d20eac5b3&mpshare=1&scene=1&srcid=10137Z41Pfnt7Ez7f5n0grG1&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page2">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA3Mzk2ODY3Mg==&mid=2651369865&idx=1&sn=baf29ed9978991647b2225afe62f15a7&scene=4#wechat_redirect">“十三五”时期科技强检规划纲要(全文)</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        为更好地推动检察工作创新发展，高检院于2016年9月29日正式印发《“十三五”时期科技强检规划纲要》。这是高检院在深化司法体制改革的关键时期，高检院党组做出的重要战略部署，是检察机关顺应新技术变革，以科学技术推动检察工作创新发展的重要举措．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA5MjM1MjIwNQ==&mid=2650086090&idx=3&sn=23f7900c012438ad4b2d2f23a902541a&chksm=886fc168bf18487e3183bfadabd4e3890c50b2061849bdc31d3f7a4568403776bf4896d38b9b&mpshare=1&scene=1&srcid=1013tA2wTNgTQC0860trOvNn&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page3">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA5MjM1MjIwNQ==&mid=2650086090&idx=3&sn=23f7900c012438ad4b2d2f23a902541a&chksm=886fc168bf18487e3183bfadabd4e3890c50b2061849bdc31d3f7a4568403776bf4896d38b9b&mpshare=1&scene=1&srcid=1013tA2wTNgTQC0860trOvNn&from=singlemessage&isappinstalled=0#wechat_redirect">中国安防行业“十三五”发展规划</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        “十三五”是深入贯彻党的十八大、十八届三中、四中和五中全会精神，全面深化改革，加快经济发展方式转变的重要时期，也是我国安防行业发展的关键时期。做好安防行业“十三五”发展规划编制工作，提出切实可行、科学的发展方向与目标，是协会的重要工作任务．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzA3Mzk2ODY3Mg==&mid=2651369865&idx=1&sn=baf29ed9978991647b2225afe62f15a7&scene=4#wechat_redirect">查看全文</a></span>
+                                </div>
+                                <div class="fourth_news_page4">
+                                    <div class="fourth_title"><h3><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzIxMjQ4NDA1NQ==&mid=2247483673&idx=1&sn=1f3cb8449db1e5029dc75f640cfdf5ae&mpshare=1&scene=1&srcid=07277S4BdEzlbtlF3SbIYkdy&from=singlemessage&isappinstalled=0#wechat_redirect">《国家信息化发展战略纲要》</a>
+                                    </h3></div>
+                                    <br/>
+                                    <p>
+                                        当今世界，信息技术创新日新月异，以数字化、网络化、智能化为特征的信息化浪潮蓬勃兴起。没有信息化就没有现代化。适应和引领经济发展新常态，增强发展新动力，需要将信息化贯穿我国现代化进程始终，加快释放信息化发展的巨大潜能。以信息化驱动现代化．．．</p>
+                                    <span><a
+                                            href="http://mp.weixin.qq.com/s?__biz=MzIxMjQ4NDA1NQ==&mid=2247483673&idx=1&sn=1f3cb8449db1e5029dc75f640cfdf5ae&mpshare=1&scene=1&srcid=07277S4BdEzlbtlF3SbIYkdy&from=singlemessage&isappinstalled=0#wechat_redirect">查看全文</a></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fourth_buttonbox" id="fourth_buttonbox">
+                <a class="fourth_pre" id="fourth_pre"><img src="img/fourth_button_pre.png"></a>
+                <a class="fourth_next" id="fourth_next"><img class="fourth_button_pre" src="img/fourth_button_next.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--第五屏-->
+    <div class="section fifth">
+        <div class="w">
+            <ul class="tab">
+                <li class="synopsis tab-item active">公司简介</li>
+                <li class="culture tab-item">企业文化</li>
+                <li class="project tab-item">未来规划</li>
+            </ul>
+            <div class="products">
+                <div class="main selected">
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;铭台（北京）科技有限公司是一家专注于为客户提供信息服务互联网公司，成立于2016年初。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;公司主营业务是移动互联网政务供采信息平台“找啊”的运营管理，为供采双方提供信息的发布及检索服务。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;公司管理团队凭着多年的互联网从业经验及深厚的行业背景，对相关行业的潜在需求有着深刻的理解，利用日益成熟的移动互联网技术，推出了真正解决行业痛点问题的APP产品“找啊”在线服务平台。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;“专业、专注、专心”是公司的经营理念。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;相信通过我们的产品与服务，一定能快速获得市场认可，会有越来越多的客户成为我们的紧密合作伙伴。</span>
+                </div>
+                <div class="main">
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;“专业、专注、专心”<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;凭借对相关行业的专业理解，专注于行业痛点问题的解决方案，为客户提供专心的服务。</span>
+                </div>
+                <div class="main">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;专注于互联网信息服务领域，从大处着眼，从小处着手，借移动互联网蓬勃发展之势，成为国内同行业的领跑者。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--第六屏-->
+    <div class="section sixth">
+        <div class="w">
+            <div class="message">
+                <span>联系电话：010-62922851</span><br/>
+                <span>邮箱：mt@aimingtai.com</span><br/>
+                <span>地址：北京海淀区西二旗西路领秀新硅谷B区</span><br/>
+                <span>铭台(北京)科技有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn">京ICP备16049113号-1</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/jquery.fullPage.min.js"></script>
+<script src="./js/index.js"></script>
+</html>

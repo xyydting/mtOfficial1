@@ -1,0 +1,884 @@
+﻿#box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/loading_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+    position: relative;
+    z-index: 1000;
+}
+
+#box .load {
+    position: absolute;
+    width: 244px;
+    height: 244px;
+    background: url("../img/loading_halo.png") no-repeat;
+    left: 50%;
+    margin-left: -122px;
+    margin-top: -122px;
+    top: 50%;
+    animation: loading 1s linear infinite;
+    -moz-animation: loading 1s linear infinite;
+    -webkit-animation: loading 1s linear infinite;
+    -ms-animation: loading 1s linear infinite;
+    -o-animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
+@-moz-keyframes loading /* Firefox */
+{
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
+@-webkit-keyframes loading /* Safari 和 Chrome */
+{
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
+@-o-keyframes loading /* Opera */
+{
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
+@-ms-keyframes loading /* Opera */
+{
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
+#box .logo {
+    position: absolute;
+    width: 161px;
+    height: 161px;
+    background: url("../img/loading_logo.png") no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+}
+
+/*第一屏幕*/
+/*顶部导航开始*/
+.indextop {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+}
+
+.navleft {
+    /*width: 400px;*/
+    height: 75px;
+    float: left;
+}
+
+.logo1 {
+    width: 300px;
+    margin-top: 10px;
+    float: left;
+}
+
+/*导航开始*/
+.navcenter {
+    width: 540px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+    position: relative;
+}
+
+.navcenter > ul {
+    position: absolute;
+}
+
+.navcenter > ul > li {
+    width: 90px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
+
+.navcenter > ul > li > a {
+    text-decoration: none;
+    color: #e5e5e5;
+    line-height: 90px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.navcenter > ul > li:hover a {
+    color: #22d5d5;
+}
+
+.navright {
+    width: 220px;
+    height: 75px;
+    margin-left: 35px;
+    float: left;
+}
+
+.navright img {
+    width: 27px;
+    vertical-align: text-bottom;
+    margin-top: 31px;
+}
+
+
+.navright a {
+    color: #22d5d5;
+    font-size: 22px;
+}
+
+#navBar .active a {
+    color: #22d5d5;
+}
+
+/*右侧分享开始*/
+.sharenav {
+    width: 5px;
+    height: 500px;
+    position: absolute;
+    margin-top: -250px;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+}
+
+.sharenav .share {
+    width: 50px;
+    height: 240px;
+    position: absolute;
+    margin-top: -120px;
+    border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px; /* Old Firefox */
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ffffff;
+    border-right: none;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    display: none;
+}
+
+.share img {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.sharenav:hover .share {
+    display: block;
+}
+
+/*轮播图开始*/
+.all {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    width: 500%;
+}
+
+.all ol {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 13%;
+    left: 42%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    margin-left: 13px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: #22d5d5;
+}
+
+#arr {
+    display: none;
+}
+
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+.banner1{
+    width: auto;
+    height: auto;
+    max-width:100%;
+    max-height:100%;
+}
+#lb-box .screen ul li:nth-child(1){
+    background:url(../img/banner1.jpg) no-repeat 20% 80%;
+    background-size: cover;
+}
+
+#lb-box .screen ul li:nth-child(2){
+    background:url(../img/banner2.jpg) no-repeat 20% 80%;
+    background-size: cover;
+}
+#lb-box .screen ul li:nth-child(3){
+    background:url(../img/banner3.jpg) no-repeat 20% 80%;
+    background-size: cover;
+}
+
+#lb-box .screen ul li:nth-child(4){
+    background:url(../img/banner1.jpg) no-repeat 20% 80%;
+    background-size: cover;
+}
+/*第二屏业务页面开始*/
+
+.second {
+    width: 100%;
+    height: 100%;
+    background: url("../img/second_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+}
+.second_da{
+    width: 1200px;
+    height: 450px;
+    position: relative;
+    margin-top: 40px;
+}
+.second .operation {
+    width: 1200px;
+    height: 280px;
+    position: absolute;
+}
+
+/*todo*/
+.second .second_tab{
+    width: 660px;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -330px;
+    background: url("../img/second_kuang.png");
+    border-bottom: 1px solid #1aa2da;
+    border-radius: 10px;
+}
+.second .second_tab .second_tab_box{
+    display:none;
+    padding: 20px;
+}
+.second .second_tab .second_tab_box p{
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height:30px;
+    margin-left: 15px;
+}
+.second .second_tab .selected{
+    display:block;
+}
+/*todo*/
+.second .operation ul li {
+    width: 280px;
+    height: 280px;
+    float: left;
+    margin-left: 95px;
+    border-radius: 140px;
+    -moz-border-radius: 140px;
+    -webkit-border-radius: 140px;
+    -ms-border-radius: 140px;
+    -o-border-radius: 140px;
+    position: relative;
+}
+.second .operation ul li .second_zhuan {
+    width: 280px;
+    height: 280px;
+    background: url("../img/second_o11.png") no-repeat;
+    list-style: none;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+}
+
+.second .operation ul li .second_nei {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -125px;
+    background: url("../img/second_o22.png") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+}
+
+.second .operation ul li .second_cont {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -106px;
+    margin-top: -106px;
+    background: rgba(31, 143, 198, 0.6);
+    border: 1px dashed #00ffff;
+    border-radius: 105px;
+}
+
+.second .operation ul li .second_text {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-left: -100px;
+    margin-top: -100px;
+    background: rgba(17, 127, 90, 0);
+}
+
+
+.second .operation ul li .second_text span {
+    width: 180px;
+    height: 160px;
+    position: absolute;
+    left: 5%;
+    top: 32%;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-family: "MicroSoft YaHei", sans-serif;
+    text-align: center;
+    line-height: 35px;
+}
+
+/*第二屏动画开始*/
+@keyframes second_Animation {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+        -moz-transform: rotateZ(-360deg);
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        -o-transform: rotateZ(-360deg);
+    }
+}
+@-moz-keyframes second_Animation {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+        -moz-transform: rotateZ(-360deg);
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        -o-transform: rotateZ(-360deg);
+    }
+}
+@-webkit-keyframes second_Animation {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+        -moz-transform: rotateZ(-360deg);
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        -o-transform: rotateZ(-360deg);
+    }
+}
+@-ms-keyframes second_Animation {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+        -moz-transform: rotateZ(-360deg);
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        -o-transform: rotateZ(-360deg);
+    }
+}
+@-o-keyframes second_Animation {
+    0% {
+        transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+        -moz-transform: rotateZ(-360deg);
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        -o-transform: rotateZ(-360deg);
+    }
+}
+.second .operation ul li:hover .second_zhuan {
+    animation: loading 10s linear infinite;
+
+}
+
+.second .operation ul li:hover .second_nei {
+    animation: second_Animation 10s linear infinite;
+}
+
+/*第三屏展示页面开始*/
+.third {
+    width: 100%;
+    height: 100%;
+    background: url("../img/third_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+    position: relative;
+}
+
+.third_wrap {
+    width: 1100px;
+    margin: 100px auto;
+}
+
+.third_slide {
+    height: 500px;
+    position: relative;
+}
+
+.third_slide li {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.third_slide li img {
+    width: 100%;
+    border: 2px solid #d2d2d2;
+}
+.third_slide li .third_message{
+    width: 100%;
+    height: 0px;
+    margin-left: 2px;
+    background:rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all 400ms linear;
+    /* Firefox 4 */
+    -moz-transition: all 400ms linear;
+    /* Safari and Chrome */
+    -webkit-transition: all 400ms linear;
+    /* Opera */
+    -o-transition: all 400ms linear;
+}
+.third_slide li .third_message p{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+.third_slide li:hover .third_message{
+    opacity: 1;
+    height: 60px;
+}
+.third_arrow {
+    opacity: 0;
+}
+
+.third_prev, .third_next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
+    background: url(../img/third_icon_.png) no-repeat;
+    z-index: 99;
+}
+
+.third_next {
+    right: 0;
+    background-image: url(../img/third_icon_next.png);
+}
+
+/*第四屏新闻开始*/
+.fourth {
+    width: 100%;
+    height: 100%;
+    background: url("../img/fourth_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+    position: relative;
+}
+
+.fourth_light {
+    width: 900px;
+    height: 560px;
+    background: url("../img/fourth_light.png");
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+    margin: 10px auto auto 60px;
+    position: relative;
+}
+
+.fourth_news {
+    width: 789px;
+    height: 456px;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 112px;
+    top: 104px;
+    overflow: hidden;
+}
+
+.fourth_news ul {
+    position: absolute;
+}
+
+.fourth_news ul li .fourth_news_page {
+    width: 789px;
+    height: 456px;
+    color: #ffffff;
+    position: relative;
+}
+
+.fourth_news_page .fourth_news_page1,
+.fourth_news_page .fourth_news_page2,
+.fourth_news_page .fourth_news_page3,
+.fourth_news_page .fourth_news_page4 {
+    width: 350px;
+    height: 181px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    float: left;
+    position: relative;
+    overflow:auto;
+    color: #ffffff;
+}
+
+.fourth_news_page .fourth_news_page1 {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.fourth_news_page .fourth_news_page2 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.fourth_news_page .fourth_news_page3 {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.fourth_news_page .fourth_news_page4 {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.fourth_news_page .fourth_news_page1 .fourth_title,
+.fourth_news_page .fourth_news_page2 .fourth_title,
+.fourth_news_page .fourth_news_page3 .fourth_title,
+.fourth_news_page .fourth_news_page4 .fourth_title {
+    height: 30px;
+    border-bottom: 1px dashed #ffffff;
+}
+
+.fourth_news_page .fourth_news_page1 h3 a,
+.fourth_news_page .fourth_news_page2 h3 a,
+.fourth_news_page .fourth_news_page3 h3 a,
+.fourth_news_page .fourth_news_page4 h3 a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.fourth_news_page .fourth_news_page1 p,
+.fourth_news_page .fourth_news_page2 p,
+.fourth_news_page .fourth_news_page3 p,
+.fourth_news_page .fourth_news_page4 p {
+    text-indent: 2em;
+    line-height: 22px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.fourth_news_page .fourth_news_page1 span a,
+.fourth_news_page .fourth_news_page2 span a,
+.fourth_news_page .fourth_news_page3 span a,
+.fourth_news_page .fourth_news_page4 span a{
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.fourth_news_page .fourth_news_page1 h3 a:hover,
+.fourth_news_page .fourth_news_page2 h3 a:hover,
+.fourth_news_page .fourth_news_page3 h3 a:hover,
+.fourth_news_page .fourth_news_page4 h3 a:hover {
+    color: #22d5d5;
+}
+
+
+.fourth_buttonbox {
+    width: 50px;
+    height: 130px;
+    position: absolute;
+    left: 78%;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.fourth_buttonbox img {
+    width: 50px;
+}
+
+.fourth_button_pre {
+    margin-top: 30px;
+}
+
+/*第五屏关于我们开始*/
+.fifth {
+    width: 100%;
+    height: 100%;
+    background: url("../img/fifth_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*Firefox*/
+    position: relative;
+}
+
+.fifth .tab {
+    width: 110px;
+    height: 120px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    right: 6%;
+    top: 19%;
+    border-radius: 12px;
+}
+
+.fifth .tab li {
+    color: #ffffff;
+    line-height: 40px;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+
+.fifth .tab li.synopsis {
+    border-radius: 12px 12px 0 0;
+}
+
+.fifth .tab li.culture {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.fifth .tab li.project {
+    border-radius: 0 0 12px 12px;
+}
+
+.fifth .products {
+    width: 600px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    left: 32%;
+    top: 33%;
+    line-height: 30px;
+    box-shadow: 10px 10px 10px #272727;
+}
+
+.fifth .products span {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #ffffff;
+}
+
+.products .main {
+    float: left;
+    display: none;
+}
+
+.products .main.selected {
+    display: block;
+}
+
+.tab li.active {
+    border-bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    color: #22d5d5;
+}
+
+
+/*第六屏联系我们开始*/
+.sixth {
+    width: 100%;
+    height: 100%;
+    background: url("../img/sixth_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;      /*老版本的Firefox*/
+    position: relative;
+}
+
+.sixth .message {
+    width: 540px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    padding: 20px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    line-height: 35px;
+    top: 72%;
+    min-width: 540px;
+    color: #000000;
+    display: inline;
+}
+
+.sixth .message a{
+    color:#000000;
+}
